@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Урок 17</title>
+    <style>
+        .div1{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border: 4px solid rgb(230, 160, 50);
+            overflow: hidden;
+            border-radius: 50%;
+            box-shadow: -10px -10px 15px rgb(59, 59, 59),
+                        10px 10px 10px rgb(0,0,0,0.1),
+                        inset -10px -10px 15px rgba(51,49,49,0.5),
+                        inset 10px 10px 10px rgba(0,0,0,0.1);
+        }
+        body{
+            margin: 0%;
+            padding: 0%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(230, 160, 50);
+        }
+       
+        .div1 span{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: linear-gradient(red, orange, yellow, green, blue, rgb(0, 195, 255), purple);
+            z-index: -1;
+            animation: anim 0.5s linear infinite;
+        }
+        @keyframes anim{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .div1::before{
+            content: '';
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            right: 25px;
+            bottom: 25px;
+            background-color: rgb(230, 160, 50);
+            border-radius: 50%;
+            border: 4px solid rgb(230, 160, 50);
+            box-shadow: inset -10px -10px 15px rgba(51,49,49,0.5),
+                        inset 10px 10px 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <span></span>
+    </div>
+</body>
+</html>

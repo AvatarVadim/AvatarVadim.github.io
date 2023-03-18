@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Урок 10</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            margin: 0px;
+            font-size: 2em;
+            position: relative;
+        }
+        .container{
+            border: 5px solid yellow;
+            padding: 3em;
+        }
+        .container:hover{
+            box-shadow: 4px 4px 0 0 yellowgreen;
+            transform: translate(-4px,-4px);
+            transition: all ease-in-out 0.3s;
+        }
+        .navbar{
+            width: 100vw;
+            position: fixed;
+            top: 0px;
+            display: flex;
+            flex-direction: row;
+            background-color: chartreuse;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo{
+            color: crimson;
+            padding: 0,5em;
+            font-weight: bold;
+        } 
+        .menu{
+            justify-content: space-between;
+        }
+        a{
+            color: greenyellow;
+            text-decoration: none;
+        }
+        .menu a{
+            margin-left: 1em;
+            padding: 1em;
+            color: firebrick;
+        }
+        .div1{
+            display: flex;
+            height: 100vh;
+            background-color:rgba(0, 38, 255, 0.568);
+            justify-content: center;
+            align-items: center;
+        }
+        .div2{
+            height: 100vh;
+            background-color:  rgba(0, 38, 255, 0.712);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .div3{
+            height: 100vh;
+            background-color:  rgb(0, 38, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            Logo
+        </div>
+        <div class="menu">
+            <a href="#div1">Home</a>
+            <a href="#div2">Questions</a>
+            <a href="#div3">About me</a>
+        </div>
+    </div>
+    <div class="div1" id = 'div1'>
+        <div class="container">
+            <a href="">Home &#128526;</a> 
+        </div>
+    </div>
+    <div class="div2" id = 'div2'>
+        <div class="container">
+            <a href="">Questions &#128579;</a> 
+        </div>
+    </div>
+    <div class="div3" id = 'div3'>
+        <div class="container">
+            <a href="">About me &#128113;</a> 
+        </div>
+    </div>
+</body>
+</html>

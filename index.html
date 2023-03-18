@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My site</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            margin: 0px;
+            font-size: 2em;
+            position: relative;
+        }
+        .container{
+            border: 5px solid yellow;
+            padding: 3em;
+        }
+        .container:hover{
+            box-shadow: 4px 4px 0 0 yellowgreen;
+            transform: translate(-4px,-4px);
+            transition: all ease-in-out 0.3s;
+        }
+     
+        .navbar{
+            width: 100vw;
+            position: fixed;
+            top: 0px;
+            display: flex;
+            flex-direction: row;
+            background-color: #7d00b0;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo{
+            color: #4aff00;
+            padding: 0.1em;
+            font-weight: bold;
+        } 
+        .menu{
+            justify-content: space-between;
+        }
+        a{
+            color: #4aff00;
+            text-decoration: none;
+        }
+        .menu a{
+            margin-left: 1em;
+            padding: 1em;
+            color: white;
+        }
+        .div1{
+            display: flex;
+            height: 100vh;
+            background-color:rgba(0, 38, 255, 0.568);
+            background-image: url(image/mono_1.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            background-attachment: fixed;
+            
+
+        }
+        .div2{
+            height: 100vh;
+            background-color: rgba(0, 38, 255, 0.712);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            background-image: url(image/Mono_2.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .div3{
+            height: 100vh;
+            background-color: rgb(0, 38, 255);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            background-image: url(image/Mono_3.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .div4{
+            height: 100vh;
+            background-color:  rgb(255, 0, 0);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+            background-image: url(image/Mono_4.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .logo::before{
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 5px;
+            background-color: red;
+            bottom: 0%;
+            left: 0%;
+            transition: all ease-in-out .5s;
+        }
+        .logo::after{
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 5px;
+            background-color: red;
+            top: 0%;
+            right: 0%;
+            transition: all ease-in-out .5s;
+        }
+        .logo:hover::before{
+            width: 100%;
+        }
+        .logo:hover::after{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            My site
+        </div>
+        <div class="menu">
+            <a href="#div1">a</a>
+            <a href="#div2">b</a>
+            <a href="#div3">c</a>
+            <a href="#div4">d</a>
+        </div>
+    </div>
+    <div class="div1" id = 'div1'>
+        <div class="container">
+            <a href="Lesson_2.html">a &#128526;</a> 
+        </div>
+        <div class="container">
+            <a href="Lesson_3.html">a &#128526;</a> 
+        </div>
+        <div class="container">
+            <a href="Lesson_4.html">a &#128526;</a> 
+        </div>
+        <div class="container">
+            <a href="Lesson_5.html">a &#128526;</a> 
+        </div>
+        <div class="container">
+            <a href="Lesson_6.html">a &#128526;</a> 
+        </div>
+        <div class="container">
+            <a href="Lesson_7.html">a &#128526;</a> 
+        </div>
+        
+    </div>
+    <div class="div2" id = 'div2'>
+        <div class="container">
+            <a href="Lesson_8.html">b &#128579;</a> 
+        </div>
+        <div class="container">
+            <a href="Kontrolnaya.html">b &#128579;</a> 
+        </div>
+        <div class="container">
+            <a href="Lesson_9.html">b &#128579;</a> 
+        </div>
+        <div class="container">
+            <a href="Lesson_10.html">b &#128579;</a> 
+        </div>
+        <div class="container">
+            <a href="Lesson_11.html">b &#128579;</a> 
+        </div>
+        <div class="container">
+            <a href="Lesson_12.html">b &#128579;</a> 
+        </div>
+    </div>
+    <div class="div3" id = 'div3'>
+        <div class="container">
+            <a href="Lesson_13.html">c &#128113;</a> 
+        </div>
+        <div class="container">
+            <a href="Lesson_14.html">c &#128113;</a> 
+        </div>
+        <div class="container">
+            <a href="Lesson_15.html">c &#128113;</a> 
+        </div>
+        <div class="container">
+            <a href="Lesson_16.html">c &#128113;</a> 
+        </div>
+        <div class="container">
+            <a href="Lesson_17.html">c &#128113;</a> 
+        </div>
+        <div class="container">
+            <a href="Lesson_18.html">c &#128113;</a> 
+        </div>
+    </div>
+    <div class="div4" id = 'div4'>
+        <div class="container">
+            <a href="Lesson_19.html">d &#128579;</a> 
+        </div>
+        <div class="container">
+            <a href="Lesson_20.html">d &#128579;</a> 
+        </div>
+        <div class="container">
+            <a href="Lesson_21.html">d &#128579;</a> 
+        </div>
+        <div class="container">
+            <a href="Lesson_22.html">d &#128579;</a> 
+        </div>
+        <div class="container">
+            <a href="Lesson_23.html">d &#128579;</a> 
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Урок 18</title>
+    <style>
+
+        body{
+            padding: 0%;
+            margin: 0%;
+            background-color: #232323;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .tree{
+            position: absolute;
+            bottom: 30%;
+            left: 45%;
+        }
+        .field{
+            position: absolute;
+            width: 100%;
+            bottom: 0%;
+        }
+        .card {
+            position: absolute;
+            color: blue;
+            top: 15%;
+            left: 15%;
+            z-index: 9999;
+        }
+        .snowflake{
+            z-index: 500;
+            background-image: url(image/snowflake.png);
+            background-size: cover;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: -50px;
+        }
+        @keyframes falling{
+            to{
+                top: 100vh;
+                transform: rotate(720deg);
+            }
+        }
+        .snowflake:nth-child(1) {
+            left: 5vw;
+            animation: falling 15s linear infinite;
+        }
+        .snowflake:nth-child(2) {
+            left: 10vw;
+            animation: falling 5s linear infinite;
+        }
+        .snowflake:nth-child(3) {
+            left: 15vw;
+            animation: falling 7s linear infinite;
+        }
+        .snowflake:nth-child(4) {
+            left: 20vw;
+            animation: falling 9s linear infinite;
+        }
+        .snowflake:nth-child(5) {
+            left: 25vw;
+            animation: falling 8s linear infinite;
+        }
+        .snowflake:nth-child(6) {
+            left: 30vw;
+            animation: falling 15s linear infinite;
+        }
+        .snowflake:nth-child(7) {
+            left: 5vw;
+            animation: falling 13s linear infinite;
+        }
+        .snowflake:nth-child(8) {
+            left: 10vw;
+            animation: falling 12s linear infinite;
+        }
+        .snowflake:nth-child(9) {
+            left: 15vw;
+            animation: falling 14s linear infinite;
+        }
+        .snowflake:nth-child(10) {
+            left: 20vw;
+            animation: falling 10s linear infinite;
+        }
+        .snowflake:nth-child(11) {
+            left: 25vw;
+            animation: falling 7s linear infinite;
+        }
+        .snowflake:nth-child(12) {
+            left: 30vw;
+            animation: falling 10s linear infinite;
+        }
+        .snowflake:nth-child(13) {
+            left: 35vw;
+            animation: falling 12s linear infinite;
+        }
+        .snowflake:nth-child(14) {
+            left: 40vw;
+            animation: falling 7s linear infinite;
+        }
+        .snowflake:nth-child(15) {
+            left: 45vw;
+            animation: falling 9s linear infinite;
+        }
+        .snowflake:nth-child(16) {
+            left: 50vw;
+            animation: falling 10s linear infinite;
+        }
+        .snowflake:nth-child(17) {
+            left: 55vw;
+            animation: falling 15s linear infinite;
+        }
+        .snowflake:nth-child(18) {
+            left: 60vw;
+            animation: falling 14s linear infinite;
+        }
+        .snowflake:nth-child(19) {
+            left: 75vw;
+            animation: falling 12s linear infinite;
+        }
+        .snowflake:nth-child(20) {
+            left: 80vw;
+            animation: falling 13s linear infinite;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <img src="image/tree.png" alt="Новогодняя ёлка" class="tree" width="400">
+    <img src="image/field.png" alt="Зимнее поле" class="field">
+    <div class="card">
+        <h1>С наступающим новым годом!</h1>
+        <p class="text">
+            <div>С Новым годом! Волшебства,</div>
+            <div>Смеха, счастья и тепла,</div>
+            <div>Мира, радостей, достатка</div>
+            <div>И во всех делах порядка!</div>
+        </p>
+    </div>
+</body>
+</html>

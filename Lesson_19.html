@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Урок 19</title>
+    <style>
+        body{
+            margin: 0%;
+            height: 100vh;
+            overflow-y: hidden;
+            background-color: black;
+            background-image: url(image/mono.jpeg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
+        .logo{
+            color: white;
+            position: relative;
+            font-size: 6em;
+            font-family: fantasy;
+            font-weight: 900;
+            cursor: pointer;
+        }
+        .logo::before{
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 5px;
+            background-color: red;
+            bottom: 0%;
+            left: 0%;
+            transition: all ease-in-out .5s;
+        }
+        .logo::after{
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 5px;
+            background-color: red;
+            top: 0%;
+            right: 0%;
+            transition: all ease-in-out .5s;
+        }
+        .logo:hover::before{
+            width: 100%;
+        }
+        .logo:hover::after{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        BLACK & WHITE
+    </div>
+</body>
+</html>
